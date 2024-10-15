@@ -1,0 +1,267 @@
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Home Section */
+#home .image img {
+    max-width: 270px; /* Limit the profile picture size */
+}
+
+/* Resume Section */
+#resume .image img {
+    max-width: 400px; /* Limit the resume image size */
+}
+
+/* Contact Section */
+#contact .image img {
+    max-width: 300px; /* Limit the contact image size */
+}
+
+/* Ensure images are centered */
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+/* Global Styles */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color:burlywood;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: blue;
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.3 rem;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: red;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: #282c34;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Main Styles */
+main {
+    padding: 2rem 0;
+}
+
+.section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #282c34;
+}
+
+.title span {
+    color: red;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.action__btns .btn-primary {
+    background-color:darkturquoise;
+    border: none;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action__btns .btn-primary:hover {
+    background-color: greenyellow;
+}
+
+/* Project Section */
+/* Project Section */
+.section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.section__container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #282c34;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 2rem); /* Three columns layout */
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #282c34;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 calc(50% - 1rem); /* Two columns layout */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        flex: 1 1 100%; /* Single column layout */
+    }
+}
+
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form button {
+    background-color: #61dafb;
+    border: none;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #21a1f1;
+}
+
+/* Footer */
+footer {
+    background-color: #282c34;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.certifications {
+    display: flex;
+    align-items: center;
+}

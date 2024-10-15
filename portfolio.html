@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylefa.css">
+    <link href="portfolio.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__content">
+                <div class="logo">
+                    <a href="mailto:priyanshumishra2404@gmail.com">PRIYANSHU MISHRA</a>
+                </div>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <i class="ri-menu-line"></i>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <div class="section__container">
+                <div class="content">
+                    <h1 class="title">Welcome to My <span>Portfolio</span></h1>
+                    <p class="description">A highly motivated and career-focused individual who is always focused upon targetting up and achieving his dreams and achievements with the help of determination and smart work. Passionate about learning new things gradually and eager to overcome newer challenges in life in order to embrace personal performance and ability to tackle problems. Contributing to various high grade projects in academics and real-life activities with similar dedication and will power. </p>
+                    <div class="action__btns">
+                        <button class="btn-primary">Contact Me</button>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="C:\Users\ITADM\Desktop\priyanshu.jpg"alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section__container">
+                <h2>Projects</h2>
+                <div class="content">
+                    <div class="project">
+                        <img src="C:\Users\ITADM\Desktop\calculator.png" alt="Project Image">
+                        <h3>Basic Calculator</h3>
+                        <p class="description">Calculator using basic HTML and CSS.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="certificates" class="section">
+            <div class="section-container">
+                <h2>Certifications</h2>
+            <div class="cert">
+                <img src="C:\Users\ITADM\Desktop\jp morgan certificate.png" alt="Certificate image">
+                <p class="description">Software Engineering Job Simulation By JP Morgan</p>
+            </div>
+            <div class="cert">
+                <img src="C:\Users\ITADM\Desktop\goldman certificate.png" alt="Certificate image">
+                <p class="description">Software Engineering Job Simulation By GoldMan Sachs</p>
+            </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section">
+            <div class="section__container">
+                <h2>Resume</h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="C:\Users\ITADM\Desktop\resume.png" alt="Resume">
+                    </div>
+                    <p class="description">Download my resume to learn more about my experience and education.</p>
+                    <a href="C:\Users\ITADM\Desktop\RESUME PRIYANSHU.pdf" download>Download My Resume</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section__container">
+                <h2>Contact</h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="C:\Users\ITADM\Desktop\communication.jpg" alt="Contact">
+                    </div>
+                    <p class="description">Feel free to get in touch with me for any opportunities or inquiries.</p>
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <button class="finalmsg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Priyanshu Mishra. All rights reserved.</p>
+    </footer>
+    <script>
+        const contact = document.querySelector(".btn-primary");
+        contact.addEventListener("click",function() {
+            alert("Thanks for your response: You can contact me at priyanshumishra2404@gmail.com")
+        });
+
+        const form = document.querySelector(".finalmsg");
+
+        form.addEventListener("click",function() {
+            alert("Your message has been sent!!, Thank you");
+            form.reset();
+        });
+
+    </script>
+</body>
+</html>
